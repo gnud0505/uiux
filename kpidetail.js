@@ -15,4 +15,3 @@ saveButton.addEventListener("click", function() {
 removeButton.addEventListener("click", function() {
     window.location.href = "kpilist.html";
 });
-

@@ -21,6 +21,12 @@
     transform: scale(1.05);
 }
 
+.card .instruct{
+    text-align: left; /* Căn lề trái cho tất cả các thẻ con */
+    padding: 0 15%;
+    margin-bottom: 40px;
+}
+
 .icon {
     background:no-repeat center center;
     background-size: cover;
@@ -30,8 +36,12 @@
     margin-bottom: 100px;
 }
 
-a {
+.instruct p{
+    font-size: 18px;
+}
+
+.instruct a {
     margin: 0;
-    color: #333;
+    color: #7A5AF8;
     text-decoration: none;
 }

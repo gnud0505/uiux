@@ -149,6 +149,21 @@
                                         <option value="done">Done</option>
                                     </select>
                                 </div>
+
+                                <div class="form-success" id="popup-success" style="display: none;">
+                                    <div class="success">
+                                           <div class="success-logo-frame">
+                                                <div> <img class="success-logo" src="image/Successmark.png"/></div>
+                                            </div> 
+                                            <div><h1 class="success-title">CONGRATULATIONS!</h1></div>
+                                            <span>
+                                                You have completed excellent kpi
+                                            </span>
+                                            <button type="button" class ="button-success" onclick="closeSuccess()">
+                                                Complete
+                                            </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- Basic Information Section -->
@@ -244,8 +259,10 @@
                         </div>
                         <!-- Save and Delete Buttons -->
                         <div class="kpi-actions">
-                            <button type="button" class="btn-save" onclick="saveKPIDetails()">Save</button>
+                            <button type="button" class="btn-save" id="kpi-save-btn" onclick="saveKPIDetails()">Save</button>
                             <button type="button" class="btn-delete" onclick="deleteKPIDetails()">Delete</button>
+                        </div>
+                        <div id="toast">
                         </div>
                     </form>
                 <!-- JavaScript -->
