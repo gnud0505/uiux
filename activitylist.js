@@ -85,11 +85,37 @@ document.addEventListener('DOMContentLoaded', function () {
     const deletePlanButton = document.getElementById("delete-btn1");
     deletePlanButton.addEventListener('click', function (event) {
         event.preventDefault();
-        modal1.style.display = "none";
+        // Trigger to document with id deleteModal
+        const modal = document.getElementById("deleteModal");
+        modal.style.display = "block";
+
+        // modal1.style.display = "none";
         // Remove the card with id is "card-1"
+        // const card = document.getElementById("card-1");
+        // card.remove();
+    });
+
+    // Interact with yes-btn1 and no-btn1
+    const yesButton = document.getElementById("yes-btn1");
+    yesButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        const modal = document.getElementById("deleteModal");
+        modal.style.display = "none";
+
         const card = document.getElementById("card-1");
         card.remove();
+        modal1.style.display = "none";
     });
+    // If no-btn -> close the modal
+    const noButton = document.getElementById("no-btn1");
+
+    noButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        const modal = document.getElementById("deleteModal");
+        modal.style.display = "none";
+    });
+
+
 
 
     function showSuccessToast() {
