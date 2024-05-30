@@ -120,6 +120,10 @@ form {
     color: #000;
 }
 
+.form-text{
+    margin-right: 23px;
+}
+
 label {
     display: block;
     margin-bottom: 10px;

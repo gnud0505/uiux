@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="detail_plan.css">
+
 </head>
 
 <body>
@@ -227,7 +228,7 @@
     function updateStatus() {
         if (statusSelect.value === 'done') {
             progressFill.style.width = '100%';
-            progressFill.style.backgroundColor = '#5BBFFF';
+            progressFill.style.backgroundColor = '#48C682';
             progressText.style.color = '#FFFFFF';
             progressText.textContent = '100%';
             currentHours.textContent = totalHours.textContent; // Assuming done means all hours completed
@@ -241,6 +242,28 @@
         }
     }
 
+    function startConfetti() {
+    const duration = 2 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 1000 };
+
+    function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    const interval = setInterval(() => {
+        const timeLeft = animationEnd - Date.now();
+
+        if (timeLeft <= 0) {
+            return clearInterval(interval);
+        }
+
+        const particleCount = 50 * (timeLeft / duration);
+        confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+        confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+    }, 250);
+}
+
     // Initial call to set the status based on current selection
     updateStatus();
 
@@ -249,6 +272,10 @@
 
 
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
 </body>
 
 </html>

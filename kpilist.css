@@ -27,6 +27,7 @@
     align-items: center;
     position: relative;
     width: 420px;
+    min-height: 110px;
 }
 
 .kpi-card:hover{
@@ -81,6 +82,9 @@
     color: #48C682;
 }
 
+.card-content{
+    width: 330px;
+}
 
 .card-content h2:hover{
     color: #6938EF;

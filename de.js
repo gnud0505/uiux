@@ -32,7 +32,7 @@ function updateStatus() {
 
     if (statusSelect.value === 'done') {
         progressFill.style.width = '100%';
-        progressFill.style.backgroundColor = '#5BBFFF';
+        progressFill.style.backgroundColor = '#48C682';
         progressText.style.color = '#FFFFFF';
         progressText.textContent = '100%';
     } else {
@@ -44,11 +44,6 @@ function updateStatus() {
     if (statusSelect.value === 'done') {
         startConfetti();
     }
-
-    const kpiTitles = document.querySelectorAll('.kpi-card h2').textContent;
-    const kpiNameDetail = document.getElementById('kpiNameDetail').value;
-
-    forEach()
 }
 
 function startConfetti() {
