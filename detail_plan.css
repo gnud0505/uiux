@@ -125,16 +125,21 @@ select {
     margin: 16px 0;
 }
 
-.skills-list span, .activity-item {
+.skills-list span, .activity-item-2,.activity-item, .activity-item-3 {
     background-color: #f0f0f0;
     padding: 8px 12px;
     border-radius: 20px;
     font-size: 14px;
+    justify-content: col;
+    flex-direction: row; /* Add this line */
+
 }
 
-.activity-item {
+.activity-item, .activity-item-2, .activity-item-3{
     display: flex;
     align-items: center;
+    flex-direction: row; /* Add this line */
+
 }
 
 .logo-activity-list {
@@ -167,13 +172,14 @@ select {
 
 .save-btn,
 .remove-btn,
-.add-activity-btn {
+.add-activity-btn{
     background: linear-gradient(90deg, #5925DC, #9C3CE7);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top:10px;
 }
 
 .remove-btn {
@@ -220,6 +226,7 @@ select {
 
     }
 }
+
 .add-activity-btn{
     margin-top: 20px;
 }
@@ -235,34 +242,64 @@ select {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
+
 .popup-successful {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    background-color: #f6eefd;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    width: 40%;
+    padding :30px;
+    margin-bottom: 10px;
+    max-width: 660px;
+    max-height:80vh;
+
     background-color: white;
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 9999;
+
 }
 
 .popup-successful-content {
     text-align: center;
+
+
+}
+
+.popup-successful-image {
+    width: 120px;
+    height: 100%;
+
 }
 
 .popup-successful-image {
     width: 92px;
     height: 77px;
+
 }
 
 .popup-successful-title {
     font-size: 36px;
     color: #1E1E1E;
     font-family: Poppins;
+
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+
     font-weight: 400;
     margin-bottom: 20px;
+
 }
 
 .popup-successful-description {
@@ -279,6 +316,18 @@ select {
 }
 
 .popup-successful-button {
+
+    background-color: #6200ea;
+    color: white;
+    font-size: 16px;
+    font-family: Poppins;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    max-width: fit-content;
+
     background: linear-gradient(0deg, #6938EF 0%, #6938EF 100%), linear-gradient(128deg, #CB3CFF 20%, #7F25FB 68%);
     color: white;
     font-size: 20px;
@@ -289,11 +338,126 @@ select {
     padding: 10px 20px;
     cursor: pointer;
     margin: 0 10px;
+
 }
 
 .popup-successful-button:hover {
     background: linear-gradient(0deg, #7F25FB 0%, #7F25FB 100%), linear-gradient(128deg, #CB3CFF 20%, #7F25FB 68%);
 }
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    height:30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border:none;
+    border-radius: 30%;
+    width:30px;
+    }
+    
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.popup-successful-text {
+    display: flex;
+    flex-direction: row;
+    margin-left:50px;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card {
+    height: 70px;
+    background: white;
+    box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.12);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.2);
+}
+
+.activity-details {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height:60%;
+    width: 60%;
+}
+
+.detail-link {
+
+    color: #4318FF;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+
+.activity-separator {
+    margin: 4px 10px;
+}
+
+.activity-title {
+
+    color: #2B3674;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 16px;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.activity-image {
+    width: 79px;
+    height: 80px;
+}
+
+
+.image-src {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.plan-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+
 
 
 .confirm-modal {
@@ -328,3 +492,4 @@ select {
 .confirm-modal button:hover {
     background: linear-gradient(0deg, #7F25FB 0%, #7F25FB 100%), linear-gradient(128deg, #CB3CFF 20%, #7F25FB 68%);
 }
+
