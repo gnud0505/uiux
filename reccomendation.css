@@ -252,6 +252,73 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+/* CSS for Notification Dropdown */
+.notification-section {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.noti-dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(89, 37, 220, 0.6), rgba(156, 60, 231, 0.6));
+    color: white;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.noti-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.noti-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.noti-text strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.noti-text p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.view-all {
+    display: block;
+    text-align: center;
+    color: white !important; /* Force white color */
+    padding: 10px;
+    text-decoration: none;
+}
+
+.view-all:hover {
+    color: #e0e0e0 !important; /* Force light grey color */
+    text-decoration: underline;
+}
+
+.notification-section:hover .noti-dropdown-content {
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
 
     .dashboard {
