@@ -331,6 +331,31 @@
     <script src="sidebar.js"></script>
     <script src="kpidetail.js"></script>
     <script src="kpicreate.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            beginDate = document.getElementById('beginDate');
+        });
+        // Khi tài liệu đã tải hoàn thành
+        $(document).ready(function () {
+            // Kích hoạt DatePicker cho phần thời gian "Begin"
+            flatpickr("#kpiStartDateDetail", {
+                enableTime: false,
+                dateFormat: "d/m/Y",
+                onClose: function (selectedDates, dateStr, instance) {
+                    document.getElementById("kpiStartDateDetail").value =dateStr;
+                }
+            });
+
+            // Kích hoạt DatePicker cho phần thời gian "End"
+            flatpickr("#kpiEndDateDetail", {
+                enableTime: false,
+                dateFormat: "d/m/Y",
+                onClose: function (selectedDates, dateStr, instance) {
+                    document.getElementById("kpiEndDateDetail").value =dateStr;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

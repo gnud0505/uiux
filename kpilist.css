@@ -3,6 +3,12 @@
     padding: 20px 0;
 }
 
+.addKPI{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .new-kpi-btn {
     border: none;
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="detail_plan.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 </head>
 
@@ -153,11 +154,11 @@
                     <div class="form-time">
                         <div class="form-group">
                             <label for="begin-date"></label>
-                            <input type="date" id="begin-date" name="begin-date" value="2024-03-04">
+                            <input type="text" id="begin-date" value="31/05/2024">
                         </div>
                         <div class="form-group">
                             <label for="end-date"></label>
-                            <input type="date" id="end-date" name="end-date" value="2024-06-05">
+                            <input type="text" id="end-date" value="01/05/2024">
                         </div>
                     </div>
                 </form>
@@ -274,7 +275,34 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            beginDate = document.getElementById('beginDate');
+        });
+        // Khi tài liệu đã tải hoàn thành
+        $(document).ready(function () {
+            // Kích hoạt DatePicker cho phần thời gian "Begin"
+            flatpickr("#begin-date", {
+                enableTime: false,
+                dateFormat: "d/m/Y",
+                onClose: function (selectedDates, dateStr, instance) {
+                    document.getElementById("begin-date").value =dateStr;
+                }
+            });
+
+            // Kích hoạt DatePicker cho phần thời gian "End"
+            flatpickr("#end-date", {
+                enableTime: false,
+                dateFormat: "d/m/Y",
+                onClose: function (selectedDates, dateStr, instance) {
+                    document.getElementById("end-date").value =dateStr;
+                }
+            });
+        });
+    </script>
 
 </body>
 

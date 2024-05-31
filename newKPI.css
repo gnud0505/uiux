@@ -1,6 +1,7 @@
 .modal-container {
     background: #FFF;
     padding: 10px 20px;
+    padding-top: 0;
     border-radius: 8px;
     width: 100%;
 }
@@ -8,7 +9,8 @@
 .progress-bar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin: 30px;
+    margin-top: 0;
 }
 
 .step {
@@ -55,7 +57,7 @@ label {
     margin: 10px 0 5px;
 }
 
-input, select, textarea {
+.modal-container input, select, textarea {
     width: 60%;
     padding: 10px;
     margin-bottom: 10px;
@@ -185,8 +187,8 @@ button:disabled {
     padding-left: 20px;
 }
 
-.time .date-input {
-    display: inline-block;
+.progress-dates .date-input {
+    display: flex;
     padding: 3px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -195,6 +197,8 @@ button:disabled {
 }
 
 .date-input label {
+    padding-left: 10px;
+    margin: 0;
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -202,11 +206,11 @@ button:disabled {
 }
 
 .date-input .time-content {
-    padding: 5px;
+    padding: 10px;
     outline: none;
     font-family: poppins;
     font-size: 16px;
-    color: #8000ff;
+    color: #000000;
 }
 
 .date-input .time-content:hover{
@@ -221,8 +225,8 @@ button:disabled {
 .close-button{
     position: fixed;
     display: flex;
-    top: -5px;
-    right: -5px;
+    top: 5px;
+    right: 5px;
     width: 60px;
     height: 60px;
 }

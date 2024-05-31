@@ -342,6 +342,13 @@ input:focus, select:focus {
     color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
+
+  .addPlan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .btnnewPlan{
     border-radius: 6px;
     padding: 20px;

@@ -4,6 +4,7 @@
     color: #fff;
     padding: 20px;
     border-radius: 8px;
+    margin-top: 20px;
 }
 
 .banner h2 {
@@ -44,7 +45,8 @@
 .kpi-stats {
     flex: 1;
     margin-right: 20px;
-    padding: 0 10px;
+    margin-top: 10px;
+    padding: 20px 10px;
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
