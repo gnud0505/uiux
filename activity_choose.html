@@ -88,34 +88,15 @@
                             <input type="text" class="search-input" placeholder="Search for tasks, events ..">
                         </div>
                         <div class="notification-section noti-dropdown">
-                            <img src="image/notification-badge.svg" alt="Notifications" class="notification-icon noti-dropdown-btn">
+                            <img src="image/notification-badge.svg" alt="Notifications"
+                                class="notification-icon noti-dropdown-btn">
                             <div class="noti-dropdown-content">
-                                <div class="noti-item">
-                                    <span class="noti-icon">🕒</span>
-                                    <div class="noti-text">
-                                        <strong>Hi! It's KPIecture.</strong>
-                                        <p>You're running late. Finish your Coding activity before it's too late!</p>
-                                    </div>
-                                </div>
-                                <div class="noti-item">
-                                    <span class="noti-icon">⏳</span>
-                                    <div class="noti-text">
-                                        <strong>Hi! It's KPIecture.</strong>
-                                        <p>You just have 1 hour to make your Prepare Text Book done before you're left behind!</p>
-                                    </div>
-                                </div>
-                                <div class="noti-item">
-                                    <span class="noti-icon">⏳</span>
-                                    <div class="noti-text">
-                                        <strong>Hi! It's KPIecture.</strong>
-                                        <p>Time's up! Complete your Assistance task now to reach KPI goal!</p>
-                                    </div>
-                                </div>
-                                <a href="#" class="view-all">View all notifications</a>
+                                <a href="#">You have 2 tasks that are about to be late</a>
+                                <a href="#">Congratulations, you have completed all your work today</a>
+                                <a href="#">You haven't made plans for next week, make it now</a>
+                                <a href="#" style="text-align:center">View all notifications</a>
                             </div>
                         </div>
-                        
-                        
                     </div>
                     <div class="account-section">
                         <div style="display:flex; flex-direction: column;">
@@ -129,7 +110,7 @@
                                     <i class="fa-solid fa-user"></i>
                                     Profile Settings
                                 </a>
-                                <a href="login.html">
+                                <a href="#">
                                     <i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out
                                 </a>
                             </div>
@@ -138,7 +119,7 @@
                 </div>
             </div>
             <div class="add-activity">
-                <div class="activity-list">ACTIVITY LIST</div>
+                <div class="activity-list">Activity List</div>
                 <div id="activityPopup" class="upload-box">
                     <div class="upload-content">
                         <div class="upload-text"><span>New Upload</span> <i class="fa-solid fa-plus"></i> </div>
@@ -152,7 +133,7 @@
                             <img class="image-src" src="image\act1.jpg" />
                         </div>
                         <div class="activity-details">
-                            <div class="activity-title">Enroll in Course</div>
+                            <div class="activity-title">Excercises</div>
                             <div class="activity-des">
                                 <div class="activity-number">Activity #1</div>
                                 <div class="activity-separator">•</div>
@@ -176,7 +157,7 @@
                             <img class="image-src" src="image/act2.jpg" />
                         </div>
                         <div class="activity-details">
-                            <div class="activity-title">Weekly Lessons</div>
+                            <div class="activity-title">Study</div>
                             <div class="activity-des">
                                 <div class="activity-number">Activity #2</div>
                                 <div class="activity-separator">•</div>
@@ -200,7 +181,7 @@
                             <img class="image-src" src="image/ac1.png" />
                         </div>
                         <div class="activity-details">
-                            <div class="activity-title">Final Project</div>
+                            <div class="activity-title">Make textbooks</div>
                             <div class="activity-des">
                                 <div class="activity-number">Activity #3</div>
                                 <div class="activity-separator">•</div>
@@ -224,7 +205,7 @@
                             <img class="image-src" src="image/ac5.png" />
                         </div>
                         <div class="activity-details">
-                            <div class="activity-title">Daily Vocabulary Practice</div>
+                            <div class="activity-title">Cook</div>
                             <div class="activity-des">
                                 <div class="activity-number">Activity #4</div>
                                 <div class="activity-separator">•</div>
@@ -248,7 +229,7 @@
                             <img class="image-src" src="image\act5.jpg" />
                         </div>
                         <div class="activity-details">
-                            <div class="activity-title">Conversation Sessions</div>
+                            <div class="activity-title">Work as a teaching assistant</div>
                             <div class="activity-des">
                                 <div class="activity-number">Activity #5</div>
                                 <div class="activity-separator">•</div>
@@ -282,12 +263,12 @@
                                             <div class="time-inputs">
                                                 <div class="time-box">
                                                     <div class="time-content" id="beginDate1">
-                                                        Begin: Click here to choose
+                                                        Begin: 08/05/2024
                                                     </div>
                                                 </div>
                                                 <div class="time-box">
                                                     <div class="time-content" id="endDate1">
-                                                        End: Click here to choose
+                                                        End: 10/7/2024
                                                     </div>
                                                 </div>
                                             </div>
@@ -356,41 +337,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div id="deleteModal" class="modal">
-                        <div class="update-popup-content" style="margin-top: 200px;">
-                            <div class="activity-content">
-                                <div class="modal-header1">
-                                    <h3 style="width:100%; text-align:center; margin-top:20px" id="modal-title-activity"
-                                        class="card-title">Are you sure want to delete this?</h3>
-                                    <button class="close" id="close-btn1">&times;</button>
-                                </div class="body-container">
-                            </div>
-
-                            <div class="activity-content">
-                                <div class="modal-header1">
-                                    <button id="yes-btn1" class="save-button">Yes</button>
-                                    <button id="no-btn1" class="delete-button">No</button>
-                                </div>
-                            </div>
-                            <div style="display: flex;">
-
-                            </div>
-
-
-                        </div>
-
-
-
-                        <!-- Two button yes or no with color like save/delete -->
-
-                    </div>
-                    <!-- Modal to confirm delete -->
-
-
-
-
                 </div>
 
                 <!-- Thêm liên kết đến thư viện Flatpickr và jQuery (nếu cần) -->
@@ -433,12 +379,9 @@
                     });
                 </script>
             </div>
-
-
             <div class="image-container">
                 <img src="image/girl.png" alt="Girl Image" class="display-image">
             </div>
-
             <div id="successPopup" class="popup-successful">
                 <div class="popup-successful-content">
                     <img src="image/acsucess.png" alt="Success Icon" class="popup-successful-image">

@@ -1,12 +1,11 @@
 .banner {
-    background-image: url(/image/banner.png);
-    height: 120px;
+    background-image: url('https://github.com/yuherus/uiux/blob/master/image/banner.png?raw=true');
+    height: 150px;
     color: #fff;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
 }
-
 .banner h2 {
     margin: 0;
     font-size: 24px;
@@ -39,6 +38,7 @@
     display: flex;
     margin-top: 20px;
     width: 100%;
+    margin-top: 50px;
 }
 
 .schedule,
@@ -128,6 +128,9 @@
         padding: 10px 20px;
         margin: 10px;
     }
+    .kpi-stats{
+        margin-top: 50px;
+    }
 
     .schedule {
         align-content: center;
@@ -149,13 +152,14 @@
 }
 
 @media(max-width: 768px) {
+    .dashboard {
+        margin-right: 20px;
+    }
     .banner {
-        border-radius: 4px;
-        min-width: 100%;
-
+       border-radius: 4px;
         font-size: 16px;
         margin-left: 30px;
-
+       
 
     }
 

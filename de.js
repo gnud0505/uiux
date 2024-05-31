@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     // This script would dynamically fill the KPI details
     const kpiDetails = {
-        name: 'Improve Project Completion Time',
+        name: 'Learning Progress',
         field: 'Work',
-        description: 'Reducing the time taken to complete projects.',
+        description: 'Measure the advancement in learning new skills or knowledge areas over a specified period.',
         goal: 'Reduce project completion time by 20%',
         unit: 'Actual Time vs. Set Time',
         startDate: '2024-04-01',
@@ -41,7 +41,7 @@ function updateStatus() {
         progressFill.style.backgroundColor = '#9C3CE7';
         progressText.textContent = '80%';
     }
-    
+
     if (statusSelect.value === 'done') {
         startConfetti();
         popupSuccess.style.display = 'flex';
@@ -84,7 +84,7 @@ function enableEditing() {
     document.getElementById('kpiEndDateDetail').disabled = false;
     document.getElementById('kpiUnitDetail').disabled = false;
     document.getElementById('kpiFieldDetail').disabled = false;
-    document.getElementById('kpiFieldDetail').addEventListener('change', function() {
+    document.getElementById('kpiFieldDetail').addEventListener('change', function () {
         if (this.value === 'Custom') {
             document.getElementById('kpiFieldCustom').style.display = 'inline-block';
         } else {

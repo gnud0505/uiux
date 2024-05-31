@@ -4,6 +4,14 @@
     grid-gap: 20px;
 }
 
+.title{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+    color: #5925DC;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -12,7 +20,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 100px 0 20px 0;
+    padding: 20px 0 20px 0;
     transition: transform 0.3s;
     margin: 20px 40px;
 }
@@ -33,11 +41,12 @@
     width: 150px;
     height: 150px;
     margin: 0 auto 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .instruct p{
     font-size: 18px;
+    margin: 0px;
 }
 
 .instruct a {

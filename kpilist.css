@@ -1,6 +1,5 @@
 .main-content {
     flex: 1;
-    padding: 20px 0;
 }
 
 .addKPI{
@@ -315,7 +314,6 @@ cursor: pointer;
     font-weight: 500; 
     color: white; 
     border: none;
-    margin-right: 90px;            
 }
 @media screen and (max-width: 768px) {
    

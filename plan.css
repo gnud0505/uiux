@@ -32,7 +32,6 @@
 .box-item-web-design,.box-item-figma,.box-item-logo-design,.box-item-ml {
     margin-top: 20px;
     margin-left: 20px;
-    width: 300px;
     height: 270px;
     background-color: whitesmoke;
     border-radius: 5px;
@@ -356,9 +355,7 @@ input:focus, select:focus {
     font-size: 16px;
     font-weight: 500;
     color: white;
-    border: none;
-    margin-right: 50px;  
-    
+    border: none;    
   }
   #btn-create-plan{
     padding: 10px 20px;
@@ -381,6 +378,10 @@ input:focus, select:focus {
       flex-wrap: wrap;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;/* Hiển thị thành một cột */
+    }
+
+    .list-plan a {
+      width: 100%;
     }
 
     .detail_plan {

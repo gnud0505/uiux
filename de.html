@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="de.css">
 </head>
+
 <body>
     <div class="container">
         <div class="kpi-details-header">
@@ -27,7 +29,8 @@
                 <div class="status-hour-container">
                     <div class="hour-completed">
                         <span><strong>Hour completed</strong></span>
-                        <span class="hours"><span class="current-hours">80</span>/<span class="total-hours">100</span></span>
+                        <span class="hours"><span class="current-hours">80</span>/<span
+                                class="total-hours">100</span></span>
                     </div>
                     <div class="status-container">
                         <label for="statusSelect"><strong>Status:</strong></label>
@@ -46,7 +49,7 @@
                         <input type="text" id="kpiNameDetail" disabled>
                     </label>
                     <label><strong>Field:</strong>
-                        <select id="kpiFieldDetail" disabled>
+                        <select id="kpiFieldDetail" disabled style="width: 100%;">
                             <option value="Work">Work</option>
                             <option value="Life">Life</option>
                             <option value="Study">Study</option>
@@ -54,21 +57,28 @@
                         </select>
                         <input type="text" id="kpiFieldCustom" style="display: none;" placeholder="Enter custom field">
                     </label>
-                    <label class="date-label"><strong>Start Date:</strong>
-                        <input type="date" id="kpiStartDateDetail" disabled>
-                    </label>
-                    <label class="date-label"><strong>End Date:</strong>
-                        <input type="date" id="kpiEndDateDetail" disabled>
-                    </label>
-                    <label><strong>Description:</strong>
-                        <textarea id="kpiDescriptionDetail" disabled></textarea>
-                    </label>
+                    <div class="date-input"style="display:flex,justify-content:space-between">
+                       <div class="start-date">
+                        <label class="date-label"><strong>Start Date:</strong>
+                            <input type="date" id="kpiStartDateDetail" disabled>
+                        </label>
+                       </div>
+                       <div class="end-date" >
+                        <label class="date-label"><strong>End Date:</strong>
+                            <input type="date" id="kpiEndDateDetail" disabled>
+                        </label>
+                       </div>
+                    </div>
+                        <label><strong>Description:</strong>
+                            <textarea id="kpiDescriptionDetail" disabled></textarea>
+                        </label>
+                    
                 </div>
                 <!-- Goals Section -->
                 <div class="kpi-goals">
                     <h2>KPI Goals</h2>
                     <label><strong>Specific Goal:</strong>
-                        <input type="text" id="kpiGoalDetail" disabled>
+                        <input type="text" style="width: 98%;" id="kpiGoalDetail" disabled>
                     </label>
                     <label><strong>Measurement Unit:</strong>
                         <span id="kpiUnitDetailText">Actual Time vs. Set Time</span>
@@ -76,7 +86,7 @@
                             <option value="Time">Actual Time vs. Set Time</option>
                             <option value="Completion">Completion Level</option>
                         </select>
-                        
+
                     </label>
                 </div>
             </div>
@@ -140,4 +150,5 @@
     <script src="de.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </body>
+
 </html>
